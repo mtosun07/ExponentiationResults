@@ -1,12 +1,14 @@
-//  static void Main()
-//  {
+//  C# CODE SAMPLE:
+//
 //    var array = new[] { double.NegativeInfinity, -Math.PI, -1D, 0D, 1D, Math.PI, double.PositiveInfinity };
 //    var results = new Dictionary<(double Base, double Exponent), double>();
 //    foreach (var i in array)
 //      foreach (var j in array)
 //        results.Add((i, j), Math.Pow(i, j));
-//  }
-
+//
+//  ----------------------------------------------------------------------------------------------------
+//
+//  The constant π was replaced with the variant x; and in order to read easy, result was formatted as well as some conditions were added.
 //  RESULTS:
 
 x ∈ R+ / {1}
@@ -58,5 +60,5 @@ x ∈ R+ / {1}
 +x ^ -1 = +1 / +x
 +x ^ +∞ = +∞
 +x ^ -∞ = +0
-+x ^ -x = +1 / (+x ^+x)
-+x ^ +x = (+x ^+x)
++x ^ -x = +1 / (+x ^ +x)
++x ^ +x = (+x ^ +x)
