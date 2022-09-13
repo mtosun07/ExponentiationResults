@@ -1,0 +1,62 @@
+//  static void Main()
+//  {
+//    var array = new[] { double.NegativeInfinity, -Math.PI, -1D, 0D, 1D, Math.PI, double.PositiveInfinity }
+//    var results = new Dictionary<(double Base, double Exponent), double>();
+//    foreach (var i in array)
+//      foreach (var j in array)
+//        results.Add((i, j), Math.Pow(i, j));
+//  }
+
+//  RESULTS:
+
+x ∈ R+ / {1}
+
++0 ^ +0 = +1
++0 ^ +1 = +0
++0 ^ -1 = +∞
++0 ^ +∞ = +0
++0 ^ -∞ = +∞
++0 ^ -x = +∞
++0 ^ +x = +0
++1 ^ +0 = +1
++1 ^ +1 = +1
++1 ^ -1 = +1
++1 ^ +∞ = +1
++1 ^ -∞ = +1
++1 ^ -x = +1
++1 ^ +x = +1
+-1 ^ +0 = +1
+-1 ^ +1 = -1
+-1 ^ -1 = -1
+-1 ^ +∞ = +1
+-1 ^ -∞ = +1
+-1 ^ -x = -1
+-1 ^ +x = -1
++∞ ^ +0 = +1
++∞ ^ +1 = +∞
++∞ ^ -1 = +0
++∞ ^ +∞ = +∞
++∞ ^ -∞ = +0
++∞ ^ -x = +0
++∞ ^ +x = +∞
+-∞ ^ +0 = +1
+-∞ ^ +1 = -∞
+-∞ ^ -1 = -0
+-∞ ^ +∞ = +∞
+-∞ ^ -∞ = +0
+-∞ ^ -x = -0
+-∞ ^ +x = -∞
+-x ^ +0 = +1
+-x ^ +1 = -x
+-x ^ -1 = -(1 / +x)
+-x ^ +∞ = +∞
+-x ^ -∞ = +0
+-x ^ -x = if x is even	+1 / (+x ^ +x)	; if x is odd	-1 / (+x ^ +x)
+-x ^ +x = if x is even	+1 * (+x ^ +x)	; if x is odd	-1 * (+x ^ +x)
++x ^ +0 = +1
++x ^ +1 = +x
++x ^ -1 = +1 / +x
++x ^ +∞ = +∞
++x ^ -∞ = +0
++x ^ -x = +1 / (+x ^+x)
++x ^ +x = (+x ^+x)
